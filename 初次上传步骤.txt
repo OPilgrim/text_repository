@@ -1,8 +1,16 @@
-git init
+git init            //初始化仓库
 git add -A
-git commit -m "˵��"
+git commit -m "说明"
 git status
 git log
-git remote add origin SSH��ַ��http��ַ
-git pull --rebase origin master
-git push -u origin master
+git remote add origin SSH地址或http地址·     //连接仓库
+git pull --rebase origin master          //pull README
+git push -u origin master             //上传
+
+//第二次要用
+git remote add origin ssh/http        //其实可以不用
+git add -A
+git commit -m "..."
+git push
+
+//自己的电脑可以用ssh，别人的要用http
