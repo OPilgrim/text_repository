@@ -1,14 +1,13 @@
-git init            //初始化仓库
-git add -A
-git commit -m "说明"
-git status
-git log
-git remote add origin SSH地址或http地址·     //连接仓库
-git pull --rebase origin master          //pull README
-git push -u origin master             //上传
-
+git init            //初始化仓库
+git add -A      //添加
+git commit -m "说明"   //保存历史记录，一定要有
+git status       //查看仓库状态
+git log      //查看提交日志
+git remote add origin SSH地址或http地址·     //连接远程仓库
+git pull --rebase origin master          //在没有README.md的情况下pull README.md，要先在文件里找到README.md才能push
+git push -u origin master             //上传至远程仓库
 //第二次要用
-git remote add origin ssh/http        //其实可以不用
+git remote add origin ssh/http        //其实可以不用，保险起见，一般会看到错误提示说仓库链接已存在
 git add -A
 git commit -m "..."
 git push
